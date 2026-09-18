@@ -26,7 +26,8 @@ is Palworld's own, belongs to Pocketpair, and ships in the release zip.
 - The program makes no network connections. It reads and writes files on the user's PC only: its settings, the mod
   packages it makes, and the Palworld mod folders when an Install button is pressed.
 
-## Rights
+## License
 
-Copyright Mistyeyes. All rights reserved. The source is published so the release can be reviewed. Ask before reusing it.
-Palworld and its game data belong to Pocketpair. The Unity engine belongs to Unity Technologies.
+The code in this repository is free to reuse under the MIT License (see `LICENSE`), copyright Mistyeyes.
+Palworld and its game data belong to Pocketpair and are not covered by that license. So are the Unity engine and
+Unity's template files, which belong to Unity Technologies.
