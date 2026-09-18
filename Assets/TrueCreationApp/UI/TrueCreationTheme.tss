@@ -1,0 +1,16 @@
+@import url("unity-theme://default");
+
+/* True Creation: the editor's dark look for the stock controls (inline styles set by the tabs still win). */
+.unity-label { color: #D2D2D2; }
+.unity-base-field__label { color: #C4C4C4; }
+.unity-button { background-color: #585858; color: #EEEEEE; border-color: #303030; }
+.unity-button:hover { background-color: #676767; }
+.unity-button:active { background-color: #6E6E6E; }
+.unity-base-text-field__input { background-color: #2A2A2A; color: #D2D2D2; border-color: #212121; }
+.unity-base-popup-field__input { background-color: #515151; color: #E4E4E4; border-color: #303030; }
+.unity-toggle__checkmark { background-color: #2A2A2A; border-color: #212121; }
+.unity-foldout__text { color: #C4C4C4; }
+.unity-collection-view__item--selected { background-color: #2C5D87; }
+.unity-base-dropdown__container-outer { background-color: #383838; border-color: #212121; }
+.unity-base-dropdown__item { color: #D2D2D2; }
+.unity-base-dropdown__item:hover { background-color: #2C5D87; }

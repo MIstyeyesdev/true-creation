@@ -1,0 +1,20 @@
+{
+  "name": "TrueCreation.App",
+  "rootNamespace": "TrueCreation.App",
+  "references": [
+    "TrueCreation.Host",
+    "PalCreationEngine.Runtime",
+    "PalItemgen.Runtime",
+    "RingOfNoXp.Runtime",
+    "TrueServer"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

@@ -1,0 +1,26 @@
+{
+  "name": "PalPanel.Editor",
+  "rootNamespace": "PalPanel",
+  "references": [
+    "PalItemgen.Runtime",
+    "PalItemgen.Editor",
+    "PalCreationEngine.Runtime",
+    "PalCreationEngine.Editor",
+    "RingOfNoXp.Runtime",
+    "RingOfNoXp.Editor",
+    "TrueServer",
+    "TrueCreation.Host",
+    "TrueCreation.App"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
