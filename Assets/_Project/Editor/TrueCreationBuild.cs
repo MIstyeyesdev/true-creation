@@ -20,7 +20,7 @@ namespace TrueEngine.EditorTools
     ///   1. The app scene: a camera and one GameObject with a UIDocument (True Creation panel settings + theme) and
     ///      AppBoot, which fills the screen with the same tab shell as the editor window. Made once; the build list
     ///      holds only this scene (SampleScene stays in the project, out of the build).
-    ///   2. Player settings for a desktop tool: company Mistyeyes, windowed 1280x800, resizable, runs in the background,
+    ///   2. Player settings for a desktop tool: company True Creation, windowed 1280x800, resizable, runs in the background,
     ///      Player.log on. The version is left as it is (Edit > Project Settings > Player).
     ///   3. BuildPipeline.BuildPlayer to a folder outside the project, then, for every Windows build (also one made from
     ///      File > Build Profiles), only what an end user can use:
@@ -46,7 +46,7 @@ namespace TrueEngine.EditorTools
         public const string PanelSettingsPath = Folder + "/TrueCreationPanelSettings.asset";
         public const string ScenePath = "Assets/Scenes/TrueCreationApp.unity";
         private const string OutPref = "TrueCreation.Build.Out";
-        public const string CompanyName = "Mistyeyes";
+        public const string CompanyName = "True Creation";
         public const string ExeName = "True Creation.exe";
 
         /// <summary>
@@ -232,12 +232,16 @@ namespace TrueEngine.EditorTools
             return notes;
         }
 
-        /// <summary>A desktop tool's window, under the company name Mistyeyes. The version is not touched.</summary>
+        /// <summary>
+        /// A desktop tool's window, under the company name True Creation. The company names the folder every user sees
+        /// for their settings and log, so it is the program's name, not the developer's (Mistyeyes is only the
+        /// creator). The version is not touched.
+        /// </summary>
         public static List<string> ApplyPlayerSettings()
         {
             var notes = new List<string>();
             void Set(string what, bool changed) { if (changed) notes.Add("Player setting: " + what + "."); }
-            // the company also names the settings and log folder: AppData\LocalLow\Mistyeyes\True Creation
+            // the company also names the settings and log folder: AppData\LocalLow\True Creation\True Creation
             Set("company " + CompanyName, PlayerSettings.companyName != CompanyName);
             PlayerSettings.companyName = CompanyName;
             Set("windowed", PlayerSettings.fullScreenMode != FullScreenMode.Windowed);
